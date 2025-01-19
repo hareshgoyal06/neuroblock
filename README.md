@@ -1,2 +1,2 @@
-UoftHacks 12 
-Daniel Morgan - Haresh Goyal - Jaedon Visva
+UofTHacks 12 🚀
+Team Members: Daniel Morgan, Haresh Goyal, Jaedon Visva
