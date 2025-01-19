@@ -9,12 +9,12 @@ function toggleOutput() {
       outputPane.classList.remove("expanded");
       generatedCodePane.style.display = "block";
       blocklyDiv.style.zIndex = "1"; // Reset workspace z-index
-      expandButton.innerText = "Expand Output";
+      expandButton.innerText = "Run Program";
     } else {
       outputPane.classList.add("expanded");
       generatedCodePane.style.display = "none";
       blocklyDiv.style.zIndex = "0"; // Lower workspace z-index
-      expandButton.innerText = "Collapse Output";
+      expandButton.innerText = "Stop Program";
     }
   }
   
