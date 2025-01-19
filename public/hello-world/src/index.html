@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>OpenBCI Application</title>
+    <!-- Include Share Tech font -->
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet" />
+    <style>
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header id="navbar">
+      <div class="container">
+        <div class="logo">
+          <!-- Brain Icon -->
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none" width="24" height="24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.828 7.828a4 4 0 010-5.656M13.172 9.172a4 4 0 010 5.656m4.242-4.242a4 4 0 01-5.656 0m1.414 1.414a4 4 0 005.656 0M9.828 16.172a4 4 0 010 5.656M9.828 7.828a4 4 0 010-5.656M13.172 9.172a4 4 0 010 5.656M9.828 16.172a4 4 0 010 5.656m4.242-4.242a4 4 0 005.656 0" />
+          </svg>
+          <h1>OpenBCI</h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Blockly Workspace -->
+    <div id="blocklyDiv">
+      <h2 class="section-title">Blockly Workspace</h2>
+    </div>
+
+    <!-- Output Pane -->
+    <div id="outputPane">
+      <!-- Generated Code Section -->
+      <div id="generatedCodePane">
+        <h2 class="section-title">Generated Code</h2>
+        <pre id="generatedCode"><code>/* Your generated code will appear here */</code></pre>
+      </div>
+      <!-- Output Section -->
+      <div id="outputSection">
+        <h2 class="section-title">Output</h2>
+        <div id="output">
+          <p>Results will appear here</p>
+        </div>
+        <button id="expandOutput" onclick="toggleOutput()">Expand Output</button>
+      </div>
+    </div>
+
+    <script>
+      function toggleOutput() {
+        const outputPane = document.getElementById('outputPane');
+        const generatedCodePane = document.getElementById('generatedCodePane');
+        const outputSection = document.getElementById('outputSection');
+        const blocklyDiv = document.getElementById('blocklyDiv');
+        const expandButton = document.getElementById('expandOutput');
+
+        if (outputPane.classList.contains('expanded')) {
+          outputPane.classList.remove('expanded');
+          generatedCodePane.style.display = 'block';
+          blocklyDiv.style.zIndex = '1'; /* Reset workspace z-index */
+          expandButton.innerText = 'Expand Output';
+        } else {
+          outputPane.classList.add('expanded');
+          generatedCodePane.style.display = 'none';
+          blocklyDiv.style.zIndex = '0'; /* Lower workspace z-index */
+          expandButton.innerText = 'Collapse Output';
+        }
+      }
+    </script>
+  </body>
+</html>
