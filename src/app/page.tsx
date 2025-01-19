@@ -122,9 +122,16 @@ export default function Page() {
               >
                 Start Building
               </Button>
-              <Button size="lg" variant="outline" className="text-black border-gray-700 hover:bg-gray-800">
-                Documentation
-              </Button>
+              <a href="docs">                  
+              
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="text-black border-gray-700 hover:bg-gray-800"
+                >
+                  Documentation
+                </Button>
+                </a>
             </div>
           </motion.div>
           <div className="py-6">
