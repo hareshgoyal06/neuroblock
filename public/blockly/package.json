@@ -1,0 +1,44 @@
+{
+  "name": "blockly",
+  "version": "1.0.0",
+  "description": "A sample app using Blockly",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "start": "webpack serve --open --mode development"
+  },
+  "keywords": [
+    "blockly"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "source-map-loader": "^4.0.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.76.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "@blockly/theme-dark": "^7.0.10",
+    "assert": "^2.1.0",
+    "blockly": "^11.0.0",
+    "brainflow": "^5.16.0",
+    "browser-builtins": "^3.3.1",
+    "browserify-fs": "^1.0.0",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.1",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.4",
+    "vm-browserify": "^1.1.2"
+  }
+}
